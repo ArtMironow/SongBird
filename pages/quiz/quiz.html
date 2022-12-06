@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./quiz_style.css">
+    <title>Главная страница</title>
+    
+  </head>
+  <body>
+    
+    <div class="page">
+        <div class="header">
+            <div class="header-img">
+                <a href="https://rs.school/js/">
+                    <img src="../../Assets/Img/rs_school_js.svg" alt="rs_school_js">
+                </a>
+                
+            </div>
+        </div>
+        <div class="content">
+            <div class="score"><p id="score"></p></div>            
+                <ul class="top">
+                    <li class="top-1"><span>Разминка</span>     </li>
+                    <li class="top-2"><span>Воробьиные</span>   </li>
+                    <li class="top-3"><span>Лесные птицы</span> </li>
+                    <li class="top-4"><span>Певчие птицы</span> </li>
+                    <li class="top-5"><span>Хищные птицы</span> </li>
+                    <li class="top-6"><span>Морские птицы</span></li>
+                </ul>
+            </div>
+            
+            <div class="center-top">
+                <div class="center-top-img">
+                    <img id="bird-picture" src="https://birds-quiz.netlify.app/static/media/bird.06a46938.jpg" alt="bird">
+                </div>
+                <div class="center-top-content">
+                    <div class="center-top-bird"></div>
+                    <div class="center-top-bird-hidden"><p id = "bird-name">* * * * * *</p></div>
+                    <div class="center-top-player">
+                        <audio class="audio-main" id="audio-main" controls="controls">
+                            <source id="audioSource-main" src=""></source>
+                            Your browser does not support the audio format.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <div class="center-bottom">
+                <div class="center-bottom-left">
+                    
+                          <ul id="list" class="bird-list">
+                            <li id="el_1"></li>
+                            <li id="el_2"></li>
+                            <li id="el_3"></li>
+                            <li id="el_4"></li>
+                            <li id="el_5"></li>
+                            <li id="el_6"></li>
+                          </ul>
+                                             
+                </div>
+                <div class="center-bottom-right no-display">
+                    <div class="center-bottom-right-top">
+                        <div class="center-bottom-right-top-img">
+                            <img id="picture" src="" alt="">
+                        </div>
+                        <div class="center-bottom-right-top-content">
+                            <div class="center-bottom-right-top-content-name">
+                                <p id="name"></p>
+                            </div>
+                            <div class="center-bottom-right-top-content-species">
+                                <p id="species"></p>
+                            </div>
+                            <div class="center-bottom-right-top-content-audio">
+                                <audio id="audio" controls="controls">
+                                    <source id="audioSource" src=""></source>
+                                    Your browser does not support the audio format.
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center-bottom-right-description">
+                        <p id="description"></p>
+                    </div>
+                </div>
+                <div class="center-bottom-right-empty ">
+                    <p>Послушайте плеер.</p>
+                    <p>Выберите птицу из списка</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <button class="butt" id="button" disabled>Следующий уровень</button>
+            </div>       
+        </div>  
+    </div>
+    <div class="result-page no-display">
+        <div class="header">
+            <div class="header-img">
+                <a href="https://rs.school/js/">
+                    <img src="../../Assets/Img/rs_school_js.svg" alt="rs_school_js">
+                </a>
+                
+            </div>
+        </div>
+        <div class="content-end">
+            <div class="content-text">
+                <h1>Поздравляем! </h1>
+                <p id = "quiz-final"></p>
+            </div>
+            <div class="content-link">
+                <a class="a" href="./quiz.html">Попробовать еще раз</a>
+            </div>
+        </div>
+    </div>
+    <script src="./quiz.js"></script>
+  </body>
+</html> 
